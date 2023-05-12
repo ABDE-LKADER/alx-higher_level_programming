@@ -1,4 +1,4 @@
-#!/usr/bin/Python3.8.x
+#!/usr/bin/Python3.8
 if __name__ == "__main__":
     import hidden_4
     for name in dir(hidden_4):
