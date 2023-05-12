@@ -1,6 +1,6 @@
-#!/usr/bin/Python3.8
+#!/usr/bin/Python3
 if __name__ == "__main__":
     import hidden_4
     for name in dir(hidden_4):
-        if name[:2] != "__":
+        if not name.startswith('__'):
             print(name)
