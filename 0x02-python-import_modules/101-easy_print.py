@@ -1,3 +1,3 @@
 #!/usr/bin/python3
-import os
-os.write(1, b'#pythoniscool\n')
+if __name__ == "__main__":
+    import os; os.write(1, b'#pythoniscool\n')
