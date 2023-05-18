@@ -9,8 +9,8 @@
 
 void print_python_bytes(PyObject *p)
 {
-	char *string;
-	long int size, i, limit;
+	char *str;
+	long int size, i, lim;
 
 	printf("[.] bytes object info\n");
 	if (!PyBytes_Check(p))
@@ -20,23 +20,23 @@ void print_python_bytes(PyObject *p)
 	}
 
 	size = ((PyVarObject *)(p))->ob_size;
-	string = ((PyBytesObject *)p)->ob_sval;
+	str = ((PyBytesObject *)p)->ob_sval;
 
 	printf("  size: %ld\n", size);
-	printf("  trying string: %s\n", string);
+	printf("  trying string: %s\n", str);
 
 	if (size >= 10)
-		limit = 10;
+		lim = 10;
 	else
-		limit = size + 1;
+		lim = size + 1;
 
-	printf("  first %ld bytes:", limit);
+	printf("  first %ld bytes:", lim);
 
-	for (i = 0; i < limit; i++)
-		if (string[i] >= 0)
-			printf(" %02x", string[i]);
+	for (i = 0; i < lim; i++)
+		if (str[i] >= 0)
+			printf(" %02x", str[i]);
 		else
-			printf(" %02x", 256 + string[i]);
+			printf(" %02x", 256 + str[i]);
 
 	printf("\n");
 }
