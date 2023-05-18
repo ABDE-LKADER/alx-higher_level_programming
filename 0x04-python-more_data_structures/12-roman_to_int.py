@@ -2,9 +2,9 @@
 def roman_to_int(roman_string):
     if type(roman_string) != str or not roman_string:
         return 0
-    sum_all = 0
-    roman = {'M': 1000, 'D': 500, 'C': 100, 'L': 50, 'X': 10, 'V': 5, 'I': 1}
-    for roman in reversed(roman_string):
-        digits = roman[roman]
-        sum_all += digits if sum_all < digits * 5 else -digits
-    return sum_all
+    all_sum = 0
+    romans = {'M': 1000, 'D': 500, 'C': 100, 'L': 50, 'X': 10, 'V': 5, 'I': 1}
+    for r in reversed(roman_string):
+        digits = romans[r]
+        all_sum += digits if all_sum < digits * 5 else -digits
+    return all_sum
