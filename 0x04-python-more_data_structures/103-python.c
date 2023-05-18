@@ -9,22 +9,36 @@
 
 void print_python_bytes(PyObject *p)
 {
-	Py_ssize_t size = PyBytes_Size(p);
-	Py_ssize_t i;
-	char *bytes = PyBytes_AsString(p);
+	char *string;
+	long int size, i, limit;
 
 	printf("[.] bytes object info\n");
-	printf("  [.] size: %ld\n", size);
-	printf("  [.] trying string: %s\n", bytes);
-	if (size > 10)
-		size = 10;
-	printf("  [.] first %ld bytes: ", size);
-	for (i = 0; i < size; i++)
+	if (!PyBytes_Check(p))
 	{
-		printf("%02hhx", bytes[i]);
-		if (i < size - 1)
-			printf(" ");
-	} printf("\n");
+		printf("  [ERROR] Invalid Bytes Object\n");
+		return;
+	}
+
+	size = ((PyVarObject *)(p))->ob_size;
+	string = ((PyBytesObject *)p)->ob_sval;
+
+	printf("  size: %ld\n", size);
+	printf("  trying string: %s\n", string);
+
+	if (size >= 10)
+		limit = 10;
+	else
+		limit = size + 1;
+
+	printf("  first %ld bytes:", limit);
+
+	for (i = 0; i < limit; i++)
+		if (string[i] >= 0)
+			printf(" %02x", string[i]);
+		else
+			printf(" %02x", 256 + string[i]);
+
+	printf("\n");
 }
 
 /**
