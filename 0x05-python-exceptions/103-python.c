@@ -75,3 +75,34 @@ void print_python_float(PyObject *p)
 	str = PyOS_double_to_string(d, 'r', 0, Py_DTSF_ADD_DOT_0, NULL);
 	printf("  value: %s\n", str);
 }
+
+/**
+ * main - Entry point
+ * Return: 0 on success
+ */
+
+int main(void)
+{
+	PyObject *p;
+	PyObject *f;
+	PyObject *b;
+
+	setbuf(stdout, NULL);
+	p = PyList_New(0);
+	PyList_Append(p, Py_BuildValue("i", 0));
+	PyList_Append(p, Py_BuildValue("i", 1));
+	PyList_Append(p, Py_BuildValue("i", 2));
+	PyList_Append(p, Py_BuildValue("i", 3));
+	PyList_Append(p, Py_BuildValue("i", 4));
+	PyList_Append(p, Py_BuildValue("i", 5));
+	print_python_list_info(p);
+	PyList_SetItem(p, 4, Py_BuildValue("i", 99));
+	print_python_list_info(p);
+
+	b = PyBytes_FromString("Hello, Holberton");
+	print_python_bytes(b);
+	f = PyFloat_FromDouble(3.14);
+	print_python_float(f);
+
+	return (0);
+}
