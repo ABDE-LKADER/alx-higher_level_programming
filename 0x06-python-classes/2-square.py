@@ -6,7 +6,7 @@ class Square:
     """Represents a square"""
     def __init__(self, size=0):
         """Initializes the data"""
-        if not size.isdigit:
+        if not size.isdigit():
             raise TypeError("size must be an integer")
         else:
             raise ValueError("size must be >= 0")
