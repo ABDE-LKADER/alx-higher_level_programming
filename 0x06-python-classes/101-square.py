@@ -51,14 +51,13 @@ class Square:
         self.__position = value
 
     def area(self):
-        """ the area of square
-        Returns:
-            size * size
-        """
+        """Return the current square area"""
+
         return self.__size * self.__size
 
     def pos_print(self):
-        """returns the printed square with position"""
+        """Print the square in position"""
+
         pos = ""
         if not self.size:
             return "\n"
@@ -73,5 +72,6 @@ class Square:
         return pos
 
     def my_print(self):
-        """print square."""
+        """Print the square in position"""
+
         print(self.pos_print(), end="")
