@@ -3,7 +3,7 @@
 
 
 class Square:
-    
+    """Represents a square"""
 
     def __str__(self):
         """Print square."""
@@ -34,19 +34,14 @@ class Square:
 
     @property
     def position(self):
-        """get the position"""
+        """Get the position"""
 
         return self.__position
 
     @position.setter
     def position(self, value):
-        """set the position
-        Args:
-            value: where
-        Raises:
-                TypeError: if not tuple, ints, positive
-        Returns: the position
-        """
+        """Set the position"""
+
         if not isinstance(value, tuple):
             raise TypeError('position must be a tuple of 2 positive integers')
         if len(value) != 2:
