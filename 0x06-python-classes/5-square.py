@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Defines a square bassed on 4-square.py"""
+"""Defines a square bassed on 3 -square.py"""
 
 
 class Square:
@@ -30,9 +30,9 @@ class Square:
         """Return the current square area"""
 
         return (self.__size * self.__size)
-    
+
     def my_print(self):
-        """print the square in # """
+        """print the square in #"""
 
         if self.__size == 0:
             print()
