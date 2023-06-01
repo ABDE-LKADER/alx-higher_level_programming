@@ -1,41 +1,31 @@
 #!/usr/bin/python3
-"""my square module"""
+"""Defines a square bassed on 5-square.py"""
 
 
 class Square:
-    """define a Square class"""
+    
 
     def __str__(self):
-        """teach python to print the square my way"""
+        """Print square."""
+
         return self.pos_print()[:-1]
 
     def __init__(self, size=0, position=(0, 0)):
-        """ initialize the square with this
-        Args:
-            size: a side of square
-            position: where the square is (coordinates)
-        """
+        """Initializes the data"""
+
         self.size = size
         self.position = position
 
     @property
     def size(self):
-        """property of the length of a side of square
-        Raises:
-            TypeError: if size is not an int.
-            ValueError: if size is < 0.
-        """
+        """Property of size of square"""
+
         return self.__size
 
     @size.setter
     def size(self, value):
-        """ set the size of square
-        Args:
-            value: the size
-        Raises:
-                TypeError: if value is not int
-                ValueError: if valie < 0
-        """
+        """Set the size of square"""
+
         if not isinstance(value, int):
             raise TypeError('size must be an integer')
         if value < 0:
@@ -44,11 +34,8 @@ class Square:
 
     @property
     def position(self):
-        """property of the position of square
-        Raises:
-            TypeError: if value != tuple of 2 ints >= 0.
-        Returns: the position
-        """
+        """get the position"""
+
         return self.__position
 
     @position.setter
