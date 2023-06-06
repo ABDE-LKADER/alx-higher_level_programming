@@ -3,7 +3,7 @@
 
 
 class Rectangle:
-    """Defines a rectangle based on 2-rectangle.py"""
+    """Defines a rectangle based on 1-rectangle.py"""
 
     def __init__(self, width=0, height=0):
         """Initializes a rectangle with width and height"""
