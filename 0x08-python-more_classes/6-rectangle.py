@@ -3,7 +3,8 @@
 
 
 class Rectangle:
-    """Defines a rectangle based on 5-rectangle.py"""
+    """Defines a rectangle based on 4-rectangle.py"""
+    number_of_instances = 0
 
     def __init__(self, width=0, height=0):
         """Initializes a rectangle with width and height"""
@@ -82,4 +83,4 @@ class Rectangle:
         """Print message when rectangle is deleted"""
 
         print("Bye rectangle...")
-        Rectangle.number_of_instances -= 1
+        Rectangle.number_of_instances += 1
