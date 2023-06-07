@@ -1,0 +1,10 @@
+============================= test session starts ==============================
+101-lazy_matrix_mul.py module tests
+===================================
+
+============================= function in use ==================================
+Using lazy_matrix_mul function
+=============================
+
+Importing function from the module:
+    >>> lazy_matrix_mul = __import__('101-lazy_matrix_mul').lazy_matrix_mul

@@ -1,0 +1,36 @@
+============================= test session starts ==============================
+3-say_my_name.py module tests
+=============================
+
+============================= function in use ==================================
+Using say_my_name function
+==========================
+
+Importing function from the module:
+    >>> say_my_name = __import__('3-say_my_name').say_my_name
+
+Passing first_name and last_name correctly
+
+    >>> say_my_name("Betty", "Holberton")
+    My name is Betty Holberton
+
+Passing None as the last_name
+
+    >>> say_my_name("John", None)
+    Traceback (most recent call last):
+    	      ...
+    TypeError: last_name must be a string
+
+Passing None as the first_name
+
+    >>> say_my_name(None)
+    Traceback (most recent call last):
+    	      ...
+    TypeError: first_name must be a string
+
+Missing two arguments
+
+    >>> say_my_name()
+    Traceback (most recent call last):
+    	      ...
+    TypeError: say_my_name() missing 1 required positional argument: 'first_name'
