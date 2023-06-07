@@ -1,9 +1,10 @@
 #!/usr/bin/python3
-"""A class that defines a rectangle"""
+"""Defines a rectangle"""
 
 
 class Rectangle:
-    """this represents a rectangle"""
+    """Defines a rectangle based on 4-rectangle.py"""
+
     number_of_instances = 0
 
     def __init__(self, width=0, height=0):
@@ -71,9 +72,11 @@ class Rectangle:
 
     def __repr__(self):
         """returns a string representation of the rectangle"""
+
         return "Rectangle({:d}, {:d})".format(self.__width, self.__height)
 
     def __del__(self):
         """prints a message for every object that is deleted"""
+
         print("Bye rectangle...")
         Rectangle.number_of_instances -= 1
