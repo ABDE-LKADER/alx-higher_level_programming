@@ -36,6 +36,13 @@ Passing a string as the size of the square
     	      ...
     TypeError: size must be an integer
 
+Passing a negative number as the size of the square
+
+    >>> print_square(-2)
+    Traceback (most recent call last):
+    	     ...
+    ValueError: size must be >= 0
+
 Passing None as the size of the square
 
     >>> print_square(None)
