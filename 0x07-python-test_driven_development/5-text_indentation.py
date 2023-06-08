@@ -7,9 +7,11 @@ def text_indentation(text):
 
     if not isinstance(text, str):
         raise TypeError("text must be a string")
-    
+  
     str = ""
     for i in ".,?:":
-        str = i + "\n\n"
-        text = text.replace(i, str)
+        str = i.split()
+
+    for i in str:
+        text = text.replace(i, i + "\n\n")
     print(text, end="")
