@@ -55,3 +55,45 @@ Dividing a matrix of number by an empty matrix:
     Traceback (most recent call last):
         ...
     ValueError: m_b can’t be empty
+
+Dividing a matrix of string by a matrix of number:
+
+    >>> matrix_mul([["Holberton", "School"], ["School", "Holberton"]], [[1, 2], [3, 4]])
+    Traceback (most recent call last):
+        ...
+    TypeError: m_a should contain only integers or floats
+
+Dividing a matrix of number by a matrix of string:
+
+    >>> matrix_mul([[1, 2], [3, 4]], [["Holberton", "School"], ["School", "Holberton"]])
+    Traceback (most recent call last):
+        ...
+    TypeError: m_b should contain only integers or floats
+
+Dividing a matrix of number various size by a matrix of number:
+
+    >>> matrix_mul([[1, 2, 3], [4, 5, 6]], [[1, 2], [3, 4]])
+    Traceback (most recent call last):
+        ...
+    TypeError: each row of m_a must be of the same size
+
+Dividing a matrix of number by a matrix of number various size:
+
+    >>> matrix_mul([[1, 2], [3, 4]], [[1, 2, 3], [4, 5, 6]])
+    Traceback (most recent call last):
+        ...
+    TypeError: each row of m_b must be of the same size
+
+Missing one argument:
+
+    >>> matrix_mul([[1, 2], [3, 4]])
+    Traceback (most recent call last):
+        ...
+    TypeError: matrix_mul() missing 1 required positional argument: 'm_b'
+
+Missing two arguments:
+
+    >>> matrix_mul()
+    Traceback (most recent call last):
+        ...
+    TypeError: matrix_mul() missing 2 required positional arguments: 'm_a' and 'm_b'
