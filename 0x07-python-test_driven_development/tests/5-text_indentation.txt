@@ -32,3 +32,91 @@ Missing one argument
         Traceback (most recent call last):
         	      ...
         TypeError: text_indentation() missing 1 required positional argument: 'text'
+
+Printing a word with spaces around
+
+    >>> text_indentation("    Holberton    ")
+    Holberton
+
+Printing a word with a special character at the end
+
+    >>> text_indentation("    Hello    .")
+    Hello.
+    <BLANKLINE>
+
+Printing all special characters
+
+    >>> text_indentation(".?:")
+    .
+    <BLANKLINE>
+    ?
+    <BLANKLINE>
+    :
+    <BLANKLINE>
+
+Passing Node as a text
+
+    >>> text_indentation(None)
+    Traceback (most recent call last):
+    	      ...
+    TypeError: text must be a string
+
+Passing a number as a text
+
+    >>> text_indentation(10)
+    Traceback (most recent call last):
+    	      ...
+    TypeError: text must be a string
+
+Printing a text with special characters
+
+    >>> text_indentation("Betty: Holberton? Python is. cool   ")
+    Betty:
+    <BLANKLINE>
+    Holberton?
+    <BLANKLINE>
+    Python is.
+    <BLANKLINE>
+    cool
+
+Printing a char number
+
+    >>> text_indentation('2')
+    2
+
+Passing an empty string
+
+    >>> text_indentation('    ')
+
+Passing a new line as a text
+
+    >>> text_indentation('\n')
+    <BLANKLINE>
+
+Passing a special character and some special characters
+
+    >>> text_indentation('\n.\n?\n:')
+    <BLANKLINE>
+    .
+    <BLANKLINE>
+    <BLANKLINE>
+    ?
+    <BLANKLINE>
+    <BLANKLINE>
+    :
+    <BLANKLINE>
+
+Passing a text with spaces and one new line
+
+    >>> text_indentation("   \n")
+    <BLANKLINE>
+
+Passing a text with spaces and one new line 2
+
+   >>> text_indentation("   \n   ")
+   <BLANKLINE>
+
+Passing a text with spaces and one new line 3
+
+   >>> text_indentation("\n   ")
+   <BLANKLINE>
