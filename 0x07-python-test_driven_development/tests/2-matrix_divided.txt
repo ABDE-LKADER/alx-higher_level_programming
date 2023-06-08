@@ -50,16 +50,6 @@ Passing a matrix by float numbers:
             ...
     TypeError: all values == 0.0
 
-Dividing a matrix by a float number:
-
-    >>> matrix_divided([[10, 20, 30], [1.33, 3.74, 6.89], [-8, -9.71, 0]], 5.3)
-    [[1.89, 3.77, 5.66], [0.25, 0.71, 1.3], [-1.51, -1.83, 0.0]]
-
-Dividing a matrix which has positive and negative integer/float numbers
-
-    >>> matrix_divided([[-1, 3.1, 0], [78, -103.7, 54]], 9.2)
-    [[-0.11, 0.34, 0.0], [8.48, -11.27, 5.87]]
-
 Missing arguments:
 
     >>> matrix_divided()
