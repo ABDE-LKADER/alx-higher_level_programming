@@ -17,8 +17,5 @@ def text_indentation(text):
             if j != "":
                 str = i + j
             else:
-                str = i
-            print(str, end="")
-
-    print()
-
+                str + "\n\n" + i + j
+    print(str, end="")
