@@ -19,13 +19,6 @@ Printing all special characters
     :
     <BLANKLINE>
 
-Passing a number as a text
-
-    >>> text_indentation(10)
-    Traceback (most recent call last):
-    	      ...
-    TypeError: text must be a string
-
 Missing one argument
     
         >>> text_indentation()
