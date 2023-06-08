@@ -14,6 +14,16 @@ Printing a string
         >>> text_indentation("Holberton")
         Holberton
 
+Printing all special characters
+
+    >>> text_indentation(".?:")
+    .
+    <BLANKLINE>
+    ?
+    <BLANKLINE>
+    :
+    <BLANKLINE>
+
 Passing a number as a text
 
     >>> text_indentation(10)
@@ -32,13 +42,3 @@ Missing one argument
         Traceback (most recent call last):
         	      ...
         TypeError: text_indentation() missing 1 required positional argument: 'text'
-
-Printing all special characters
-
-    >>> text_indentation(".?:")
-    .
-    <BLANKLINE>
-    ?
-    <BLANKLINE>
-    :
-    <BLANKLINE>
