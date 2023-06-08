@@ -9,11 +9,6 @@ Using text_indentation function
 Importing function from the module:
     >>> text_indentation = __import__('5-text_indentation').text_indentation
 
-Printing a string
-
-        >>> text_indentation("Holberton")
-        Holberton
-
 Printing all special characters
 
     >>> text_indentation(".?:")
