@@ -9,8 +9,7 @@ def text_indentation(text):
         raise TypeError("text must be a string")
     
     str = ""
-    for i in text:
-        str += i
-        if i == '.' or i == '?' or i == ':':
-            str += '\n\n'
-    print(str.strip(), end="")
+    for i in ".,?:":
+        str = i + "\n\n"
+        text = text.replace(i, str)
+    print(text, end="")
