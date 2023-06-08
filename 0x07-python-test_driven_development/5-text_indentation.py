@@ -5,17 +5,16 @@
 def text_indentation(text):
     """Print after each of these characters: ., ? and :"""
 
-    if not isinstance(text, str):
+    if type(text) is not str:
         raise TypeError("text must be a string")
-  
+
     str = text[:]
+
     for i in ".?:":
-        list = str.split(" ")
+        list_text = str.split(i)
         str = ""
-        for j in list:
+        for j in list_text:
             j = j.strip(" ")
-            if str != "":
-                str = i + j
-            else:
-                str + "\n\n" + i + j
+            str = j + i if str is "" else str + "\n\n" + j + i
+
     print(str[:-3], end="")
