@@ -14,8 +14,8 @@ def text_indentation(text):
         str = ""
         for j in list:
             j = j.strip(" ")
-            if j != "":
+            if str != "":
                 str = i + j
             else:
                 str + "\n\n" + i + j
-    print(str, end="")
+    print(str[:-3], end="")
