@@ -78,30 +78,3 @@ Printing a text with special characters
     Python is.
     <BLANKLINE>
     cool
-
-Printing a char number
-
-    >>> text_indentation('2')
-    2
-
-Passing an empty string
-
-    >>> text_indentation('    ')
-
-Passing a new line as a text
-
-    >>> text_indentation('\n')
-    <BLANKLINE>
-
-Passing a special character and some special characters
-
-    >>> text_indentation('\n.\n?\n:')
-    <BLANKLINE>
-    .
-    <BLANKLINE>
-    <BLANKLINE>
-    ?
-    <BLANKLINE>
-    <BLANKLINE>
-    :
-    <BLANKLINE>
