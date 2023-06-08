@@ -8,14 +8,6 @@ def text_indentation(text):
     if not isinstance(text, str):
         raise TypeError("text must be a string")
     
-    for i in range(len(text)):
-        for j in range(i + 1, len(text)):
-            if text[i] == " " and text[j] != " ":
-                break
-        if text[i] in ".?:":
-            print(text[i])
-            print()
-        else:
-            print(text[i], end="")
-
-    print()
+    for i in ".?:":
+        text = text.replace(i, i + "\n\n")
+    print("\n".join([i.strip() for i in text.split("\n")]), end="")
