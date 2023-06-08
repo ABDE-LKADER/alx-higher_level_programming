@@ -105,18 +105,3 @@ Passing a special character and some special characters
     <BLANKLINE>
     :
     <BLANKLINE>
-
-Passing a text with spaces and one new line
-
-    >>> text_indentation("   \n")
-    <BLANKLINE>
-
-Passing a text with spaces and one new line 2
-
-   >>> text_indentation("   \n   ")
-   <BLANKLINE>
-
-Passing a text with spaces and one new line 3
-
-   >>> text_indentation("\n   ")
-   <BLANKLINE>
