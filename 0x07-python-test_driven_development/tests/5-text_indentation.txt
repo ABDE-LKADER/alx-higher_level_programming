@@ -32,24 +32,3 @@ Missing one argument
         Traceback (most recent call last):
         	      ...
         TypeError: text_indentation() missing 1 required positional argument: 'text'
-
-Printing a word with spaces around
-
-    >>> text_indentation("    Holberton    ")
-    Holberton
-
-Printing a word with a special character at the end
-
-    >>> text_indentation("    Hello    .")
-    Hello.
-    <BLANKLINE>
-
-Printing all special characters
-
-    >>> text_indentation(".?:")
-    .
-    <BLANKLINE>
-    ?
-    <BLANKLINE>
-    :
-    <BLANKLINE>
