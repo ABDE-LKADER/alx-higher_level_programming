@@ -10,9 +10,19 @@ def text_indentation(text):
   
     str = text[:]
     for i in ".?:":
-        list = str.split(i)
+        list = str.split(" ")
         str = ""
         for j in list:
-            str += j.strip()
-            str += i + "\n"
-    print(str[:-1], end="")
+            str += j.strip(i)
+            str += i
+        list = str.split("\n")
+        str = ""
+        for j in list:
+            str += j.strip(i)
+            str += i
+    list = str.split("\n")
+    str = ""
+    for j in list:
+        str += j.strip()
+        str += "\n"
+    print(str, end="")
