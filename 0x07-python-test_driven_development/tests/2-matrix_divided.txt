@@ -17,6 +17,9 @@ Dividing a matrix by 3:
 Dividing a matrix by "Hello":
 
     >>> matrix_divided([[1, 2, 3], [4, 5, 6]], "Hello")
+    Traceback (most recent call last):
+    	      ...
+    TypeError: div must be a number
 
 Dividing a matrix by 0:
 
@@ -46,6 +49,13 @@ Passing a matrix by float numbers:
     Traceback (most recent call last):
             ...
     TypeError: all values == 0.0
+
+Passing a matrix by strings:
+    
+        >>> matrix_divided([["a", "b", "c"], ["d", "e", "f"]], 10)
+        Traceback (most recent call last):
+        	      ...
+        TypeError: matrix must be a matrix (list of lists) of integers/floats
 
 Missing arguments:
 
