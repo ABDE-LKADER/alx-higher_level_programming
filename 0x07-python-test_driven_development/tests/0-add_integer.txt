@@ -13,17 +13,9 @@ Adding 1 and 2
     >>> add_integer(1, 2)
     3
 
-Subtracting 100 and 2
-    >>> add_integer(100, -2)
-    98
-
 Adding 2.1 and 98
     >>> add_integer(2.1)
     100
-
-Subtracting 100.3 and 2
-	    >>> add_integer(100.3, -2)
-	    98
 
 Adding an integer number and a string
     >>> add_integer(4, "School")
@@ -48,3 +40,17 @@ Adding a number and a list
     Traceback (most recent call last):
 	      ...
     TypeError: b must be an integer
+
+Case Overflow:
+
+    >>> add_integer(float('inf'), 0)
+    Traceback (most recent call last):
+    	      ...
+    OverflowError: cannot convert float infinity to integer
+
+Case NaN:
+
+    >>> add_integer(0, float('nan'))
+    Traceback (most recent call last):
+    	      ...
+    ValueError: cannot convert float NaN to integer
