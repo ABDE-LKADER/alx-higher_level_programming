@@ -13,7 +13,7 @@ def text_indentation(text):
         str = str.split(i)
         str = ""
         for j in str:
-            str += j.strip()
-            str += i
-        str = str[:-1]
-        print(str.strip())
+            str = j.strip(" ")
+            str = i + j
+            if str != "":
+                print(str)
