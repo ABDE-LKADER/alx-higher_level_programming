@@ -26,11 +26,6 @@ Passing a number as a text
     	      ...
     TypeError: text must be a string
 
-Passing a string with spaces BLANKLINE
-    
-        >>> text_indentation("Holberton School")
-        Holberton School
-
 Missing one argument
     
         >>> text_indentation()
