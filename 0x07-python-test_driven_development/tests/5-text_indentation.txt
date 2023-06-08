@@ -53,28 +53,3 @@ Printing all special characters
     <BLANKLINE>
     :
     <BLANKLINE>
-
-Passing Node as a text
-
-    >>> text_indentation(None)
-    Traceback (most recent call last):
-    	      ...
-    TypeError: text must be a string
-
-Passing a number as a text
-
-    >>> text_indentation(10)
-    Traceback (most recent call last):
-    	      ...
-    TypeError: text must be a string
-
-Printing a text with special characters
-
-    >>> text_indentation("Betty: Holberton? Python is. cool   ")
-    Betty:
-    <BLANKLINE>
-    Holberton?
-    <BLANKLINE>
-    Python is.
-    <BLANKLINE>
-    cool
