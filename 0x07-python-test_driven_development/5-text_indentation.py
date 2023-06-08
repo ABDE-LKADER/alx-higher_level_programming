@@ -5,7 +5,7 @@
 def text_indentation(text):
     """Print after each of these characters: ., ? and :"""
 
-    if type(text) is not str:
+    if not isinstance(text, str):
         raise TypeError("text must be a string")
 
     for i in range(len(text)):
