@@ -13,16 +13,12 @@ def text_indentation(text):
         list = str.split(" ")
         str = ""
         for j in list:
-            str += j.strip(i)
-            str += i
-        list = str.split("\n")
-        str = ""
-        for j in list:
-            str += j.strip(i)
-            str += i
-    list = str.split("\n")
-    str = ""
-    for j in list:
-        str += j.strip()
-        str += "\n"
-    print(str, end="")
+            j = j.strip(" ")
+            if j != "":
+                str = i + j
+            else:
+                str = i
+            print(str, end="")
+
+    print()
+
