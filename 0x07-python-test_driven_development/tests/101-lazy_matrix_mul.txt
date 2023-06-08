@@ -1,13 +1,12 @@
-============================= test session starts ==============================
-101-lazy_matrix_mul.py module tests
-===================================
+The ``101-lazy_matrix_mul`` module
+============================
 
-============================= function in use ==================================
-Using lazy_matrix_mul function
-=============================
+Using ``lazy_matrix_mul``
+---------------------
 
 Importing function from the module:
-    >>> lazy_matrix_mul = __import__('101-lazy_matrix_mul').lazy_matrix_mul
+
+    >>> matrix_mul = __import__('101-lazy_matrix_mul').lazy_matrix_mul
 
 Multiplying two matrices
 
