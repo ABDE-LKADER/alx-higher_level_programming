@@ -1,1 +1,1 @@
-# Solution to tasks on Python - Inheritance
+> Here We Will See __*0x0A. Python - Inheritance*__ Let's GOOOOOOO
