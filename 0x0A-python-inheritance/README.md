@@ -1,1 +1,1 @@
-> Here We Will See __*0x0A. Python - Inheritance*__ Let's GOOOOOOO
+> Here We Will See __*Python - Everything is object*__ ^_^
