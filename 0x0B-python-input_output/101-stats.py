@@ -1,15 +1,13 @@
 #!/usr/bin/python3
-"""Reads from standard input and computes metrics
-"""
+"""Module that reads stdin line by line and computes metrics"""
 
 
 def print_stats(size, status_codes):
-    """Print accumulated metrics
-    """
+    """Function that prints the stats"""
+
     print("File size: {}".format(size))
     for key in sorted(status_codes):
         print("{}: {}".format(key, status_codes[key]))
-
 
 if __name__ == "__main__":
     import sys
