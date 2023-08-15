@@ -1,5 +1,4 @@
 #!/usr/bin/node
-
 const a = "No argument"
 const b = "Argument found"
 const c = process.argv.length;
